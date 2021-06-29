@@ -111,63 +111,16 @@ namespace Test_Console
             //  Console.WriteLine("Hi there guys".ReverseText());
 
 
-            //Random rand = new Random();
-            //string[] strs = new string[10];
-
-            //for (int i = 0; i < strs.Length; i++)
-            //{
-            //    Console.WriteLine(strs[i] = ((char)rand.Next('a', 'z' + 1)).ToString());
-
-
-            //}
-
-            //var column1 = new List<string>();
-
-            //column1.Add("Hello world");
-            //column1.Add("Hey");
-            //column1.Add("Yo");
-
-
-            //var column2 = new List<string>();
-            //column2.Add("Hi Oleg");
-            //column2.Add("Hello");
-            //column2.Add("Kak dela");
-
-            //var column3 = new List<string>();
-            //column2.Add("Darova world");
-            //column2.Add("Privet");
-            //column2.Add("KUKU");
-
-            //var maxWidth = column1.Max(s => s.Length);
-            //var formatString = string.Format("{{0, -{0}}}|", maxWidth);
-
-            //var resultForSecondRaw = new List<string>();
-
-
-            //foreach (var s in column1)
-            //{
-            //    Console.Write(formatString, s);
-            //    foreach (var item in column2)
-            //    {
-
-            //    }
-            //    Console.Write(formatString, s);
-            //    foreach (var item in column3)
-            //    {
-
-            //    }
-            //    Console.Write(formatString, s);
-            //    Console.WriteLine();
-            //}
+            
 
 
             IEnumerable<Tuple<string, string, string>> authors =
     new[]
     {
-      Tuple.Create("12312323", "Isaac", "Asimov"),
-      Tuple.Create("12313123", "Robert", "Heinlein"),
-      Tuple.Create("12313123", "", "Herbert"),
-      Tuple.Create("123123123", "Aldous", "Huxley"),
+      Tuple.Create("1", "Isaac", "Asimov"),
+      Tuple.Create("2", "Robert", "Heinlein"),
+      Tuple.Create("3", "", "Herbert"),
+      Tuple.Create("4", "Aldous", "Huxley"),
     };
 
             Console.WriteLine(authors.ToStringTable(
